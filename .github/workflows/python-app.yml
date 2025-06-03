@@ -18,6 +18,9 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.11'
+      - name: Install Compatible Version of Click
+        run: |
+          pip install click==7.* # Установка старой версии Click, совместимой с Black
 
       - name: Install Dependencies
         run: |
