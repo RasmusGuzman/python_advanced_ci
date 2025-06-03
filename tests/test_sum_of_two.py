@@ -1,4 +1,4 @@
-from main import sum_of_two
+from src.main import sum_of_two
 
 def test_sum():
   result = sum_of_two(2,2)
